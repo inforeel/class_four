@@ -218,7 +218,6 @@ master_array = []
 #http://stackoverflow.com/questions/5809093/how-do-i-read-line-by-line-a-text-file-in-ruby-hosting-it-on-s3
 #http://stackoverflow.com/questions/5545068/what-are-all-the-common-ways-to-read-a-file-in-ruby/5545284#5545284
 
-#weather_data.each {|line_break| org_weather_data.push (line_break.split (" "))}
 
 weather_data.each do |line|
 	small_array.push(line.split (" "))
