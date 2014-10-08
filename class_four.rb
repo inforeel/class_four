@@ -1,106 +1,106 @@
 #problem 1
-# puts "What is your name?"
+puts "What is your name?"
 
-# name = gets.chomp
+name = gets.chomp
 
-# puts "Hello #{name}!"
+puts "Hello #{name}!"
 
 #problem 2
 
-# puts "What is your name?"
+puts "What is your name?"
 
-# name = gets.chomp
-# name.downcase
+name = gets.chomp
+name.capitalize
 
-# if name =="Jack"
+if name =="Jack"
 
-# 	puts "Hello #{name}!"
+puts "Hello #{name}!"
 
-# elsif name == "Jill"
-# 	puts "Hello #{name}!"
+elsif name == "Jill"
+puts "Hello #{name}!"
 
-# else
-# 	puts "bye"
+else
+puts "bye"
 
-# end
+end
 
 #problem 3
 
-# puts "Enter a number, any number."
-# user_number = gets.to_i
+puts "Enter a number, any number."
+user_number = gets.to_i
 
-#  i = 0
-#  total_number = 0
-#   while i <= user_number
-#   	total_number = (i + total_number)
-#   	i = (i + 1)
-#   end
+ i = 0
+	total_number = 0
+	while i <= user_number
+	total_number = (i + total_number)
+	   	i = (i + 1)
+ end
 
-# response = "Here's your number added up with the numbers preceeding it: #{total_number}"
-# puts response
+response = "Here's your number added up with the numbers preceeding it: #{total_number}"
+puts response
 
 #problem 4
 
-# puts "Enter a number, any number."
-# user_number = gets.to_i
+puts "Enter a number, any number."
+user_number = gets.to_i
 
-# puts "Add or multiply?"
-# operator = gets.chomp
+puts "Add or multiply?"
+operator = gets.chomp
 
-#  i = 1
-#  total_number = 1
+ i = 1
+total_number = 1
 
-# if operator == "Add"
+if operator == "Add"
 
-#    while i <= user_number
-#    		total_number = (i + total_number)
-# 	  	i = (i + 1)
-# 	  	puts total_number
-#    end
+    while i <= user_number
+    		total_number = (i + total_number)
+	  	i = (i + 1)
+ 	  	puts total_number
+    end
 
-#   elsif operator == "Multiply"
+   elsif operator == "Multiply"
 
-#    while i <= user_number
-#    		total_number = (i * total_number)
-# 	  	i = (i + 1)
-# 	  	puts total_number
-# 	 end
+    while i <= user_number
+   		total_number = (i * total_number)
+ 	  	i = (i + 1)
+ 	  	puts total_number
+ 	 end
 
-# end
+end
 
 #problem 5 Secret Number 
 
-# secret_number = 42
+secret_number = 42
 
-# puts "Guess the number please"
+puts "Guess the number please"
 
-# tries = 1
+tries = 1
 
-# while tries <= 3
-# 	guess = gets.chomp.to_i
-# 	if guess == secret_number
-# 		puts "You win!"
-# 		puts "You have tried #{tries} time"
-# 		guess == 0
+while tries <= 3
+	guess = gets.chomp.to_i
+ 	if guess == secret_number
+ 		puts "You win!"
+ 		puts "You have tried #{tries} time"
+ 		guess == 0
 
-# 	elsif guess > secret_number
-# 		puts "TOO BIG"
-# 		puts "You have tried #{tries} time"
-# 		guess == 0
+ 	elsif guess > secret_number
+ 		puts "TOO BIG"
+ 		puts "You have tried #{tries} time"
+ 		guess == 0
 
-# 	elsif guess < secret_number
-# 		puts "TOO SMALL"
-# 		puts "You have tried #{tries} time"
-# 		guess == 0
+ 	elsif guess < secret_number
+ 		puts "TOO SMALL"
+ 		puts "You have tried #{tries} time"
+ 		guess == 0
 
-# 	end
+ 	end
 
-# 	tries = (tries +1 )
+ 	tries = (tries +1 )
 
-# 	if tries > 3
-# 		puts "No more guesses left"
-# 	end
-# end
+ 	if tries > 3
+		puts "No more guesses left"
+	end
+ end
 #experiment
 
 # secret_number = 42
@@ -140,69 +140,68 @@
 
 strings = ["Hello", "World", "in", "inside", "a", "frame" ]
 
+longest = (strings.max_by {|string| string.length}).length
+
+
 #strings.max_by {|string| string.length = longest_word}
 
-# longest = strings.max_by {|string}
+#longest = strings.max_by {|string|}
 
 # #puts = longest_word
 
 # strings do |string|
 # 	string.length
 # 	puts string
-# end
-
-#trings.each do |string|
-
-# longest = (strings.max_by {|string| string.length}).length
-# #puts longest
-
-# strings.each do |string|
-# 	difference = longest - string.length
-
-# 	difference.times do 
-# 		string << " "
-# 	end
-
-# end
-
-# (longest + 2).times do
-# 	print "*"
-# 	end
-# 	print "\n"
-
-# strings.map do |string|
-# 	string.prepend "*"
-# 	string << "*" 
-# end
-
-# strings.each {|string| puts string}
+#  end
 
 
-# (longest + 2).times do
-# 	print "*"
-# 	end
+strings.each do |string|
+ 	difference = longest - string.length
+
+ 	difference.times do 
+ 		string << " "
+ 	end
+
+ end
+
+ (longest + 2).times do
+ 	print "*"
+ 	end
+ 	print "\n"
+
+ strings.map do |string|
+ 	string.prepend "*"
+ 	string << "*" 
+ end
+
+ strings.each {|string| puts string}
+
+
+ (longest + 2).times do
+ 	print "*"
+ 	end
 	
 #problem 7 modulus numbers
 
-# n = 1
+n = 1
 
-# while n <= 75
+while n <= 75
 
-# 	if n%3 == 0 && n%5 == 0
-# 		puts "BewdRocks!"
+if n%3 == 0 && n%5 == 0
+ 		puts "BewdRocks!"
 
-# 	elsif n%3 == 0
-# 		 puts "Bewd"
+ 	elsif n%3 == 0
+ 		 puts "Bewd"
 
-# 	elsif n%5 == 0
-# 		puts "Rocks"
+ 	elsif n%5 == 0
+ 		puts "Rocks"
 
-# else puts n
-# 	end
+ else puts n
+ 	end
 
-# n = (n +1)
+ n = (n +1)
 
-# end
+ end
 
 
 #problem 8 Weather Stats
